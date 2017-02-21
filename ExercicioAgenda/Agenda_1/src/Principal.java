@@ -43,7 +43,7 @@ public class Principal {
 		String valorExistenteLista = "Valor não encontrado!";
 		
 			for (int x = 0; x < agendaList.size(); x++) {
-				if (agendaList.get(x).getNome().equals(cont.getNome())) {		
+				if (agendaList.get(x).getNome().equalsIgnoreCase(cont.getNome())) {		
 					valorExistenteLista = String.format("Nome:%s Telefone:%s", agendaList.get(x).getNome(),
 					agendaList.get(x).getTelefone());
 				}
@@ -55,7 +55,7 @@ public class Principal {
 		boolean valorExistenteLista = true;
 		for (int x = 0; x < agendaList.size(); x++) {
 
-			if (agendaList.get(x).getNome().equals(cont.getNome())
+			if (agendaList.get(x).getNome().equalsIgnoreCase(cont.getNome())
 					&& agendaList.get(x).getTelefone().equals(cont.getTelefone())) {
 				valorExistenteLista = false;
 			}
