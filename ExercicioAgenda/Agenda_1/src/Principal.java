@@ -3,9 +3,7 @@ import java.util.Scanner;
 import Model.contato;
 
 public class Principal {
-
 	public static ArrayList<contato> agendaList = new ArrayList<contato>();
-
 	public static void main(String[] args) {
 		int operacao = 0;
 		Scanner sc = new Scanner(System.in);
@@ -31,33 +29,26 @@ public class Principal {
 			}
 		} while (operacao != 3);
 		sc.close();
-	}
-	
+	}	
 
 	private static void escreveOperacoesPossiveis() {
 		System.out.println("Sistema de Gerenciamento de Contatos");
 		System.out.println();
 		System.out.println("Inserir contato: digite 1");
 		System.out.println("Consultar: digite 2");
-		System.out.println("Sair: digite 3");
-
-		
+		System.out.println("Sair: digite 3");		
 	}
 
-
 	private static String verificaList(contato cont, boolean retornarContato) {
-		String valorExistenteLista = "Valor n„o encontrado!";
+		String valorExistenteLista = "Valor n√£o encontrado!";
 		
 			for (int x = 0; x < agendaList.size(); x++) {
 				if (agendaList.get(x).getNome().equals(cont.getNome())) {		
 					valorExistenteLista = String.format("Nome:%s Telefone:%s", agendaList.get(x).getNome(),
 					agendaList.get(x).getTelefone());
 				}
-			}
-					
-			
+			}			
 		return valorExistenteLista;
-
 	}
 
 	private static boolean verificaList(contato cont) {
@@ -83,7 +74,7 @@ public class Principal {
 				agendaList.add(cont);
 				System.out.println("Contato cadastrado com Sucesso!");
 			} else {
-				System.out.println("J· existe um Contato com esse nome, tente novamente!");
+				System.out.println("J√° existe um Contato com esse nome, tente novamente!");
 			}
 
 		} else {
