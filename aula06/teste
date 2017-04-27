@@ -1,0 +1,38 @@
+Nome: Douglas Domenico Bollella
+1410950
+ADS 4
+
+1 - Definir o modelo conceitual e estrutural do sistema.
+2 -
+Comunicação - SOA
+Implantação - 3-Tier
+Domínio - DDD
+Estrutura - Arquitetura em camadas
+
+3 - Bankline, Loja Virtual.
+4 - 
+Camada de Apresentação
+Camada de Serviço
+Camada de Negócio
+Camada de Dados
+5 - Os layers são camadas lógicas e podem estar na mesma máquina, já os tier ficam em computadores separados.
+6 -
+ 
+
+7- 
+Caching
+Gerenciamento de Sessão
+Gerenciamento de Exceção
+
+8- A forma mais comum da arquitetura é a aplicação em três camadas (3-Tier), comumente usada em aplicações web, na qual as camadas são:
+- interface com o usuário (Camada de Apresentação);
+- lógica do negócio (Camada de Negócio); e
+- banco de dados (Camada de Dados)
+
+9 - Consistem em uma implementação teste de uma pequena parte da solução para fazer uma análise de viabilidade, uma comparação entre potenciais designs ou para fazer uma estimativa inicial.
+
+10-
+- Qualidades do sistema
+- Qualidades de execução (run-time), 
+- Qualidades de design
+- Qualidades de uso
